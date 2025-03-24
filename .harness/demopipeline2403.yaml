@@ -38,24 +38,11 @@ pipeline:
                       spec:
                         branch: master
               - step:
-                  type: RunTests
-                  name: RunTests_1
-                  identifier: RunTests_1
-                  spec:
-                    language: Java
-                    buildTool: Maven
-                    args: clean test
-                    runOnlySelectedTests: true
-                    reports:
-                      type: JUnit
-                      spec:
-                        paths:
-                          - "**/abc.xml"
-                    enableTestSplitting: false
-              - step:
                   type: Run
                   name: Build
                   identifier: Run_1
                   spec:
+                    connectorRef: account.harnessImage
+                    image: jetbrains/code-with-me-lobby
                     shell: Sh
                     command: mvn clean install
