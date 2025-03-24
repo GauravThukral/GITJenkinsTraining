@@ -8,7 +8,7 @@ pipeline:
     ci:
       codebase:
         connectorRef: githubharness2103
-        repoName: GITJenkinsTraining
+        repoName: jacoco-example-project
         build: <+input>
   stages:
     - stage:
