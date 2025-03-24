@@ -33,3 +33,11 @@ pipeline:
                   spec:
                     shell: Sh
                     command: mvn clean install
+              - step:
+                  type: Test
+                  name: Test_1
+                  identifier: Test_1
+                  spec:
+                    shell: Sh
+                    command: mvn test
+                    intelligenceMode: true
