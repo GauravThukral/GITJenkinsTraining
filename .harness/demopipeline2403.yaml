@@ -32,7 +32,7 @@ pipeline:
                   identifier: GitClone_1
                   spec:
                     connectorRef: githubharness2103
-                    repoName: GITJenkinsTraining
+                    repoName: jacoco-example-project
                     build:
                       type: branch
                       spec:
@@ -42,7 +42,5 @@ pipeline:
                   name: Build
                   identifier: Run_1
                   spec:
-                    connectorRef: account.harnessImage
-                    image: jetbrains/code-with-me-lobby
                     shell: Sh
                     command: mvn clean install
