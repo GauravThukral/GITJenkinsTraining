@@ -43,7 +43,7 @@ pipeline:
                   identifier: RunTests_1
                   spec:
                     language: Java
-                    buildTool: Gradle
+                    buildTool: Maven
                     args: clean test
                     runOnlySelectedTests: true
                     reports:
