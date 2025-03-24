@@ -1,0 +1,46 @@
+pipeline:
+  name: demopipeline-2403
+  identifier: demopipeline2403
+  projectIdentifier: default_project
+  orgIdentifier: default
+  tags: {}
+  properties:
+    ci:
+      codebase:
+        connectorRef: githubharness2103
+        repoName: GITJenkinsTraining
+        build: <+input>
+  stages:
+    - stage:
+        name: build-2403
+        identifier: build2403
+        description: ""
+        type: CI
+        spec:
+          cloneCodebase: true
+          platform:
+            os: Linux
+            arch: Amd64
+          runtime:
+            type: Cloud
+            spec: {}
+          execution:
+            steps:
+              - step:
+                  type: GitClone
+                  name: GitClone_1
+                  identifier: GitClone_1
+                  spec:
+                    connectorRef: githubharness2103
+                    repoName: GITJenkinsTraining
+                    build:
+                      type: branch
+                      spec:
+                        branch: master
+              - step:
+                  type: Run
+                  name: Run_1
+                  identifier: Run_1
+                  spec:
+                    shell: Sh
+                    command: mvn clean install
