@@ -27,17 +27,6 @@ pipeline:
           execution:
             steps:
               - step:
-                  type: GitClone
-                  name: GitClone_1
-                  identifier: GitClone_1
-                  spec:
-                    connectorRef: githubharness2103
-                    repoName: jacoco-example-project
-                    build:
-                      type: branch
-                      spec:
-                        branch: master
-              - step:
                   type: Run
                   name: Build
                   identifier: Run_1
