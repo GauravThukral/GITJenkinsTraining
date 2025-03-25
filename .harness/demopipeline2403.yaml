@@ -56,8 +56,8 @@ pipeline:
                         level: info
                     auth:
                       access_token: sqb_1bad93967fdbb468d942e84d8e51a53363cf726c
-                      domain: http://34.132.216.193:9000
-                      ssl: true
+                      domain: http://34.132.216.193:9000/
+                      ssl: false
                     tool:
                       java:
                         binaries: target/classes
