@@ -58,3 +58,7 @@ pipeline:
                       access_token: sqp_edbfced9c8e6e9ef91c92264d4ef1514f4669ffb
                       domain: http://34.72.195.230:9000
                       ssl: true
+                    tool:
+                      java:
+                        libraries: target/classes
+                      project_key: Jaco
