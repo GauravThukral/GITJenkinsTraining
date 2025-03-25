@@ -55,7 +55,7 @@ pipeline:
                       log:
                         level: info
                     auth:
-                      access_token: sqb_21526d655bcf54e3ea2b095d077c5b501a5890cf
+                      access_token: sqp_56ba788a811c7a5f067729a62f8a2c943ab89a8b
                       domain: http://34.132.216.193:9000/
                       ssl: false
                     tool:
