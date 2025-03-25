@@ -60,5 +60,5 @@ pipeline:
                       ssl: true
                     tool:
                       java:
-                        libraries: target/classes
+                        binaries: target/classes
                       project_key: Jaco
