@@ -56,7 +56,7 @@ pipeline:
                         level: info
                     auth:
                       access_token: sqp_edbfced9c8e6e9ef91c92264d4ef1514f4669ffb
-                      domain: http://34.72.195.230:9000
+                      domain: http://34.132.216.193:9000
                       ssl: true
                     tool:
                       java:
