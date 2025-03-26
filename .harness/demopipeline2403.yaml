@@ -62,3 +62,11 @@ pipeline:
                       java:
                         binaries: target/classes
                       project_key: Jaco
+              - step:
+                  type: ArtifactoryUpload
+                  name: ArtifactoryUpload_1
+                  identifier: ArtifactoryUpload_1
+                  spec:
+                    connectorRef: jfrogconnector
+                    target: demoharness-libs-snapshot
+                    sourcePath: target/classes
