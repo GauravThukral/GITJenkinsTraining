@@ -69,4 +69,11 @@ pipeline:
                   spec:
                     connectorRef: jfrogconnector
                     target: demoharness-libs-snapshot
-                    sourcePath: /root/.m2/repository
+                    sourcePath: /harness/temp/
+          sharedPaths:
+            - ""
+          caching:
+            enabled: false
+            paths: []
+          buildIntelligence:
+            enabled: false
