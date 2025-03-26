@@ -71,7 +71,7 @@ pipeline:
                     target: demoharness-libs-snapshot
                     sourcePath: /root/.m2/repository/
           sharedPaths:
-            - /root/.m2/repository/com/machiavellian/example-coverage-project/1.0-SNAPSHOT
+            - /root/.m2/repository/
           caching:
             enabled: false
             paths: []
