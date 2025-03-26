@@ -71,7 +71,7 @@ pipeline:
                   identifier: ArtifactoryUpload_1
                   spec:
                     connectorRef: jfrogconnector
-                    target: demoharness-libs-snapshot
+                    target: demoharness-libs-snapshot_5
                     sourcePath: /root/.m2/repository/
           sharedPaths:
             - /root/.m2/repository/
