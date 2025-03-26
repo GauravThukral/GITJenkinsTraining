@@ -69,4 +69,4 @@ pipeline:
                   spec:
                     connectorRef: jfrogconnector
                     target: demoharness-libs-snapshot
-                    sourcePath: target/classes
+                    sourcePath: /root/.m2/repository
