@@ -62,6 +62,9 @@ pipeline:
                       java:
                         binaries: target/classes
                       project_key: Jaco
+                  when:
+                    stageStatus: Success
+                    condition: 1 == 2
               - step:
                   type: GCSUpload
                   name: GCSUpload_1
