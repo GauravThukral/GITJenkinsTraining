@@ -55,16 +55,13 @@ pipeline:
                       log:
                         level: info
                     auth:
-                      access_token: sqp_56ba788a811c7a5f067729a62f8a2c943ab89a8b
-                      domain: http://34.132.216.193:9000/
+                      access_token: sqp_333b251b470c4974d73a5af34affbc3326a83012
+                      domain: http://34.133.187.134:9000/
                       ssl: false
                     tool:
                       java:
                         binaries: target/classes
                       project_key: Jaco
-                  when:
-                    stageStatus: Success
-                    condition: 1 == 2
               - step:
                   type: ArtifactoryUpload
                   name: ArtifactoryUpload_1
