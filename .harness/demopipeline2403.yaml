@@ -72,7 +72,7 @@ pipeline:
                   spec:
                     connectorRef: GCS
                     bucket: gcs_bucket88
-                    sourcePath: /Harness/
+                    sourcePath: /Harness
           sharedPaths:
             - /root/.m2/repository/
           caching:
